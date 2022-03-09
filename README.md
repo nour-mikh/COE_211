@@ -18,3 +18,6 @@ Setting up git and pushing a simple file
 
 ### StaffManagement
 Creating Employee Objects from Class 
+
+### Lab 6
+Combining previous lab assignments in one and performing code based on user choice
