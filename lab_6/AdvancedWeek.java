@@ -10,7 +10,7 @@ public class AdvancedWeek {
 	
     public String toString() {	
         int i = 1;
-        return i + ":" + day_1 + "\n" + (i + 1) + ":" + day_2 + "\n"+ (i + 2) + ":" + day_3 + "\n" + (i + 3) + ":" + day_4 + "\n" + (i + 4) + ":" + day_5 + "\n" + (i + 5) + ":" + day_6 + "\n" + (i + 6) + ":" + day_7;
+        return i + ": " + day_1 + ",\n" + (i + 1) + ": " + day_2 + ",\n"+ (i + 2) + ": "  + day_3 + ",\n" + (i + 3) + ": " + day_4 + ",\n" + (i + 4) + ": " + day_5 + ",\n" + (i + 5) + ": " + day_6 + ",\n" + (i + 6) + ": " + day_7 + ".";
     }
 
 }	

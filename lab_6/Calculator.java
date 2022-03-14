@@ -9,15 +9,6 @@ public class Calculator {
     public Calculator() {
         // Get user input
         Scanner scanCalc = new Scanner(System.in);
-        /**
-         * Continue code here to ask for the first number, the operator, and the second number, IN THAT ORDER
-         */
-
-        // Decide on the operation to perform 
-        /**
-         * Insert code to decide on which function to call, based on the operator the user chose
-         * Hint: Switch statement
-         */
 
         System.out.println("Input the first number: ");
         num1 = scanCalc.nextInt();
@@ -29,7 +20,7 @@ public class Calculator {
         System.out.println("Input the second number: ");
         num2 = scanCalc.nextInt();
 
-        switch(operator.trim()){
+        switch(operator){
             case "+":
                 System.out.println(add(num1, num2));
                 break;
@@ -44,7 +35,8 @@ public class Calculator {
                 break;
             default:
                 System.out.println("Your input is not an operator :(, try again");
-                operator = scanCalc.nextLine();
+                scanCalc.nextLine();
+                new Calculator();
         }
 
     }

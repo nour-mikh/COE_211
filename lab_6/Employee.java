@@ -20,12 +20,11 @@ public class Employee {
         age = scan.nextInt();
         System.out.println("Please input the employee's salary:");
         salary = scan.nextDouble();
-        //scan.nextLine();
 
     }
 
     public String toString() {
         // insert logic for toString method
-        return "Employee information: " + firstName + ", " + lastName + ", " + age + ", " + salary;
+        return "Employee information: " + firstName + " " + lastName + ", " + age + ", " + salary;
     }
 }
