@@ -7,7 +7,11 @@ public class Calculator {
 
     // Constructor to initialize the calculator
     public Calculator() {
-        // Get user input
+        operate();
+
+    }
+
+    private void operate(){
         Scanner scanCalc = new Scanner(System.in);
 
         System.out.println("Input the first number: ");
@@ -36,9 +40,8 @@ public class Calculator {
             default:
                 System.out.println("Your input is not an operator :(, try again");
                 scanCalc.nextLine();
-                new Calculator();
+                operate();
         }
-
     }
 
     public String add(int a, int b) {
